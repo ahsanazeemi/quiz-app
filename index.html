@@ -1,0 +1,85 @@
+<!-- Quiz App -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon" width='32px' height='32px'>
+
+</head>
+<body>
+    <div class="container">
+        <div class="quiz" id="quiz">
+            <h1>General Knowledge Quiz</h1>
+            <h2>Time Left : <span id="timer"></span></h2>
+            <div>
+                1. Full Form of "www" in a Url is : <br><br>
+                <form>
+                <input type="radio" name="ans1" class="radios-1">
+                <label for="ans1">World Web Wide</label><br>
+                <input type="radio" name="ans1" class="radios-1">
+                <label for="ans1">World Wide Web</label><br>
+                <input type="radio" name="ans1" class="radios-1">
+                <label for="ans1">World Wild Web</label><br>
+                <input type="radio" name="ans1" class="radios-1">
+                <label for="ans1">Worst Wide Web</label></form><br>
+            </div>
+            <div>
+                2. Full Form of "HTML" is : <br><br>
+                <form>
+                <input type="radio" name="ans1" class="radios-2">
+                <label for="ans1">Helping Team Manual Language</label><br>
+                <input type="radio" name="ans1" class="radios-2">
+                <label for="ans1">Hydrogen Titra Multi Language</label><br>
+                <input type="radio" name="ans1" class="radios-2">
+                <label for="ans1">Hyper Text Markup Language</label><br>
+                <input type="radio" name="ans1" class="radios-2">
+                <label for="ans1">None of these</label></form><br>
+            </div>
+            <div>
+                3. Full Form of "CSS" in Programming is : <br><br>
+                <form>
+                <input type="radio" name="ans1" class="radios-3">
+                <label for="ans1">Cascading Style Sheets</label><br>
+                <input type="radio" name="ans1" class="radios-3">
+                <label for="ans1">Classic Style Sheets</label><br>
+                <input type="radio" name="ans1" class="radios-3">
+                <label for="ans1">Classic Simple Styles</label><br>
+                <input type="radio" name="ans1" class="radios-3">
+                <label for="ans1">none of these</label></form><br>
+            </div>
+            <button onclick="finish()">FINISH QUIZ</button>
+        </div>
+        <div id="result" class="hide">
+            <img src="avatar.png" width="200px" height="200px">
+            <p id='name'></p>
+            <p id="emotions"></p>
+            <p class="other">You Have Scored <span id="score"></span>/3</p>
+            <p class="other">Percentage : <span id="percent"></span>%</p>
+            <a class="but" href="index.html">TRY AGAIN</a>
+        </div>
+        <div id="result" class="hide">
+            <img src="avatar.png" width="200px" height="200px">
+            <p id='name'></p>
+            <p id="emotions"></p>
+            <p class="other">You Have Scored <span id="score"></span>/3</p>
+            <p class="other">Percentage : <span id="percent"></span>%</p>
+            <a class="but" href="index.html">TRY AGAIN</a>
+        </div>
+        <div id="result1" class="hide ext">
+            <div class="imgs">
+                <img src="oops.png" max-width="300px" height="385px">
+            </div>
+            <div class="txt">
+                <p id="emotions">Oops! Times Up</p>
+                <p class="other" id="others">Sorry, You are Failed !</p>
+                <a class="but" href="index.html">TRY AGAIN</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>

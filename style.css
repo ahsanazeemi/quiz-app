@@ -1,0 +1,212 @@
+/* >>>> Quiz App <<<< */
+
+*{
+    font-family: 'ABeeZee', sans-serif;
+    transition: 0.3s all linear;
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: rgb(68, 107, 236);
+
+}
+h1{
+    text-align: center;
+    margin: 20px auto;
+    color: white;
+}
+h2{
+    text-align: center;
+    margin: 30px auto;
+    color: white;
+}
+h2 span{
+    display: inline-block;
+    width: 40px;
+    background: white;
+    color: rgb(68, 107, 236);
+    padding: 5px;
+    border-radius: 5px;
+    height: 30px;
+}
+.container{
+    max-width: 800px;
+    height: auto;
+    background: transparent;
+    margin: 0 auto;
+}
+.quiz div{
+    color: rgb(68, 107, 236);
+    background: white;
+    font-size: 22px;
+    margin: 29px auto;
+    padding: 25px;
+    border-radius: 20px;
+    transition: 0.3s all linear;
+}
+.quiz div:nth-child(3){
+    margin-bottom: 0px;
+}
+.quiz div:hover{
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+.quiz button{
+    padding: 8px;
+    font-size: 20px;
+    margin: 20px 0px;
+    width: 160px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    transition: 0.2s all linear;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    float: right;
+}
+.quiz button:hover{
+    cursor: pointer;
+    transform: translateY(-3px);
+    background: white;
+    color: rgb(68, 107, 236);
+
+}
+#result{
+    background: white;
+    font-size: 22px;
+    margin: 119px auto;
+    padding: 25px;
+    border-radius: 20px;
+    transition: 0.3s all linear;
+    text-align: center;
+}
+#result:hover{
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+input[type=radio]{
+    margin: 10px 0px;
+}
+.hide{
+    display: none;
+}
+p{
+    font-size: 30px;
+    margin: 20px 0;
+}
+#name{
+    font-size: 50px;
+    color: rgb(68, 107, 236);
+    margin: 5px auto;
+}
+.but{
+    display: block;
+    text-decoration: none;
+    padding: 8px;
+    font-size: 20px;
+    margin: 20px auto;
+    width: 160px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    transition: 0.2s all linear;
+    background: transparent;
+    color: rgb(68, 107, 236);
+    border: 1px solid rgb(68, 107, 236);
+}
+.but:hover{
+    cursor: pointer;
+    transform: translateY(-3px);
+    background: rgb(68, 107, 236);
+    color: white;
+}
+#result1{
+    background: white;
+    font-size: 22px;
+    margin: 119px auto;
+    padding: 25px;
+    border-radius: 20px;
+    transition: 0.3s all linear;
+    text-align: center;
+}
+#result1:hover{
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+.ext{
+    text-align: left;
+}
+.imgs{
+    width: 30%;
+    display: inline-block;
+    text-align: left;
+    margin: 5px 0;
+}
+.txt{
+    display: inline-block;
+    width: 69%;
+    position: relative;
+    top: -100px;
+}
+.txt #emotions{
+    color: rgb(68, 107, 236);
+    font-size: 50px;
+}
+#others{
+    color: red;
+}
+@media only screen and (max-width: 500px){
+    h1{
+        margin: 25px auto;
+        font-size: 30px;
+    }
+    .quiz{
+        width: 90%;
+        margin: 10px auto;
+    }
+    .container{
+        max-width: 100%;
+    }
+    #result{
+        width: 80%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+    #name{
+        font-size: 33px;
+    }
+    #emotions{
+        font-size: 28px;
+    }
+    .other{
+        font-size: 23px;
+    }
+    img{
+        width: 150px;
+        height: 150px;
+    }
+    #result1{
+        width: 80%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+    .imgs{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .imgs img{
+        text-align: center;
+        width: 150px;
+        height: 210px;
+    }
+    .txt{
+        width: 100%;
+        position: unset;
+    }
+    .txt #emotions{
+        font-size: 40px;
+    }
+}
